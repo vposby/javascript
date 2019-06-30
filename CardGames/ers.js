@@ -3,7 +3,7 @@ Egyptian War!
 version 1.0 - no slaps, straight card play
 */
 
-var windowOutput, person;
+var windowOutput, person, card;
 var player = new Array;
 
 function rearrange(arrayInput,index) {
@@ -35,7 +35,7 @@ function removePlayer(playerIndex) {
 }
 
 function randBetween(min,max) {
-	const result = max - Math.floor(Math.random(min)+1);
+	const result = max - Math.floor(Math.random()*min);
 	return result;
 }
 
@@ -52,5 +52,10 @@ for (i=0; i<suits.length();i++) {
 
 // shuffle deck up to ten times
 for (i=0;i<randBetween(6,10));i++) {
-	deck.push(deck[i]) // THIS IS WRONG
+	for (j=0;j<deck.length();j++) {
+		card = Math.floor(Math.random()*52);
+		deck.push(deck[card])
+		deck.splice(card)
+	}
+
 }
