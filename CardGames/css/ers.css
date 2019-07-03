@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: "Roboto Slab", serif;
+}
+
+button {
+  width: 50px;
+  height: 75px;
+  border: 1px solid #999;
+  line-height: 34px;
+  font-size: 24px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+}
+
+.cardBack {
+  background: url(./img/cardBack.jpg);
+}
+
+.cardFace {
+  background: #fff;
+  color: #000;
+  border: 1px solid #999;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
